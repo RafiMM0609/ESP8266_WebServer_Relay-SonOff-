@@ -14,6 +14,6 @@ SonOff sendiri sebenarnya merupakan sebuah hardware yang sudah mempunyai platfom
 - Stop Kontak 1
 - Kabel AC
 ### Wiring SonOff
-Buka tutup SonOff lalu perhatikan pin dalam foto dibawah ini 
-![SonOFF.jpeg](https://github.com/RafiMM0609/ESP8266_WebServer_Relay-SonOff-/blob/main/Pictures/SonOFF.jpeg?raw=true)
+Buka tutup SonOff lalu perhatikan pin dalam foto dibawah ini <br>
+![SonOFF.jpeg](https://github.com/RafiMM0609/ESP8266_WebServer_Relay-SonOff-/blob/main/Pictures/SonOFF.jpeg?raw=true) <br>
 berikan 4 head pin male untuk mengeluarkan pin RX, TX, Gnd, Vcc. Hubungkan SonOFF dengan FTDI seperti pada gambar berikut. **Pastikan tegangan FTDI adalah 3.3V**
