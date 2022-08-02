@@ -68,7 +68,7 @@ const char index_html[] PROGMEM = R"rawliteral(
           <table border="0" align="center">
             <tbody>
               <tr height="30px"><td><strong>Nama</strong></td><td><input class="box" type="text" name="nama" size="15"></td></tr>
-              <tr height="30px"><td><strong>Divisi</strong></td> <td><input class="box" type="text" name="mitra" size="15"></td></tr>
+              <tr height="30px"><td><strong>Divisi</strong></td> <td><input class="box" type="text" name="divisi" size="15"></td></tr>
               <tr height="30px"><td><strong>Nomor HP</strong></td> <td><input class="box" type="text" name="nohp" size="15"></td></tr>
               <tr height="30px"><td><label for="keperluan"><strong>Keperluan</strong></label></td><td><select class="box" name="keperluan" id="keperluan">
                 <option value="Pasang Baru"> Pasang baru </option>
