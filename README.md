@@ -13,6 +13,7 @@ SonOff sendiri sebenarnya merupakan sebuah hardware yang sudah mempunyai platfom
 - Steker 1 
 - Stop Kontak 1
 - Kabel AC
+
 ###Wiring SonOff
 Buka tutup SonOff lalu perhatikan pin dalam foto dibawah ini
 **![nama file](alamat foto)**
