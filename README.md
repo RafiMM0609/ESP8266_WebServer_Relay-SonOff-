@@ -17,3 +17,12 @@ SonOff sendiri sebenarnya merupakan sebuah hardware yang sudah mempunyai platfom
 Buka tutup SonOff lalu perhatikan pin dalam foto dibawah ini <br>
 <img align="center" width="353" height="346" src="https://github.com/RafiMM0609/ESP8266_WebServer_Relay-SonOff-/blob/main/Pictures/SonOFF.jpeg?raw=true"><br>
 berikan 4 head pin male untuk mengeluarkan pin RX, TX, Gnd, Vcc. Hubungkan SonOFF dengan FTDI seperti pada gambar berikut. **Pastikan tegangan FTDI adalah 3.3V**
+### Program SonOff
+Kamu dapat menekan tombol hitam dan tahan lalu colokan kabel FTDI yang sudah terhubung ke SonOff dengan PC untuk menyalakan SonOff dalam mode flash. Tanda SonOff telah dapat memasuki mode flash adalah lampu indikator LED yang terdapat pada SonOff mati. Setelah itu silahkan ikuti langkah-langkah berikut
+#### Install Library yang diperlukan pada arduino IDE
+Library yang diperlukan adalah ESP8266, WiFiClientSecure, dan AsyncWebServer.
+#### Upload code ________
+Hubungkan SonOff dengan PC ke dalam mode flash lalu upload code _____ , pastikan SonOff terhubung ke dalam jaringan WiFi yang mempunyai akses internet
+#### Seting Google Sheeet sebagai penerima data
+Buat dokumen google sheet sebagai database penerima data yang akan dikirimkan oleh SonOff. Buka apps script dan copy code ____ lalu terapkan untuk program dapat berjalan dengan lancar.
+Selamat mencoba....
