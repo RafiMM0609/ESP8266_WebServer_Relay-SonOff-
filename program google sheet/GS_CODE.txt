@@ -1,0 +1,60 @@
+function myFunction() {
+  
+}
+function doGet(e) { 
+Logger.log( JSON.stringify(e) );
+var result = 'Ok';
+if (e.parameter == 'undefined') {
+result = 'No Parameters';
+}
+else {
+var sheet_id = 'bdfqwb8d23h872h87g2no3jfg0j9j8'; // Must be changed
+var sheet = SpreadsheetApp.openById(sheet_id).getActiveSheet();
+var newRow = sheet.getLastRow() + 1; 
+var rowData = [];
+var Curr_Date = new Date();
+rowData[0] = Curr_Date; // Date in column A
+var Curr_Time = Utilities.formatDate(Curr_Date, "Asia/Jakarta", 'HH:mm:ss');
+rowData[1] = Curr_Time; // Time in column B
+for (var param in e.parameter) {
+Logger.log('In for loop, param=' + param);
+var value = stripQuotes(e.parameter[param]);
+Logger.log(param + ':' + e.parameter[param]);
+switch (param) {
+case 'nama':
+rowData[2] = value; // nama in column C
+result = 'nama Written on column C'; 
+break;
+case 'nim':
+rowData[3] = value; // nama in column D
+result = 'nim Written on column D'; 
+break;
+case 'nohp':
+rowData[4] = value; // nama in column E
+result = 'nohp Written on column E'; 
+break;
+case 'asal':
+rowData[5] = value; // kelengkapan in column F
+result += ' ,asal Written on column F'; 
+break;
+case 'kesibukan':
+rowData[6] = value; // kelengkapan in column G
+result += ' ,keperluan Written on column G'; 
+break;
+case 'linkktm':
+rowData[7] = value; // fotoktp in column H
+result += ' ,fotoktm Written on column H'; 
+break; 
+default:
+result = "unsupported parameter";
+}
+}
+Logger.log(JSON.stringify(rowData));
+var newRange = sheet.getRange(newRow, 1, 1, rowData.length);
+newRange.setValues([rowData]);
+}
+return ContentService.createTextOutput(result);
+}
+function stripQuotes( value ) {
+return value.replace(/^["']|['"]$/g, "");
+}
