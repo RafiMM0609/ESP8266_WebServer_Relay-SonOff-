@@ -26,5 +26,5 @@ Hubungkan SonOff dengan PC ke dalam mode flash. Buka bisa.ino lalu konfigurasi w
 #### Seting Google Sheeet sebagai penerima data
 Buat dokumen google sheet sebagai database penerima data yang akan dikirimkan oleh SonOff. Buka apps script dan copy code yang terdapat pada GS_CODE.txt ke dalam apps script lalu terapkan dan buat deployment baru untuk program dapat berjalan dengan lancar.
 #### Upload program
-Setelah semua langkah dilakukan, upload program
+Setelah semua langkah dilakukan, upload program <br>
 selamat mencoba
