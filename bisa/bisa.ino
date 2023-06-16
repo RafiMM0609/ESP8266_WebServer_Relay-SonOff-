@@ -98,3 +98,9 @@ void loop() {
   pembersihan();
   delay(1000);
  }
+
+void baru(){
+
+println("siiuù")
+
+}
