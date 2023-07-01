@@ -100,7 +100,9 @@ void loop() {
  }
 
 void baru(){
-
+if (True){
+prinrln("berhasil")}else{
+return 0}
 println("siiuù")
 
 }
