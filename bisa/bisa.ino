@@ -100,9 +100,9 @@ void loop() {
  }
 
 void baru(){
-if (True){
+pesan =0
+if (pesan == 1){
 prinrln("berhasil")}else{
 return 0}
 println("siiuù")
-
 }
